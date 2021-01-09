@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack o'holic</title>
+    <link rel="stylesheet" href="stylehome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  
+
+    <style>
+      #more{display: none;}
+    </style>
+
+</head>
+
+<body>
+
+   
+   
+    <header>
+    <h1> <b>Indian Institute of Technology, Roorkee</b></h1>
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUTEhMWFRUWGSAbGRgYGSAfIBsgIBsfHyIjHiIbIiggHyAnIh4fIT0hJSkrLjEuGB8zODMsNyotLisBCgoKDg0OGxAQGi0mICYtLS8tLS0tLS0tMDAtLS0tLS0vLS8tLS01LS0tLS0tLS0tNS0tLS0tLS0tLS0vLS0tL//AABEIAOEA4AMBIgACEQEDEQH/xAAbAAADAQEBAQEAAAAAAAAAAAAABQYEAwIHAf/EAEoQAAIBAgQEAwQHBAgDBgcAAAECAwQRABIhMQUGE0EiUWEUMnGBByNCUmKRoTNygrEVJENjkqLB0TRz8BZEU6Oy4SU1VIOTwvH/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EACsRAAICAgIBAwMCBwAAAAAAAAABAhEDIRIxQRNRYQQiMoGxI0JxodHw8f/aAAwDAQACEQMRAD8A+44MGDABgwYMAGDBgwAYMGDABgwYmOK890cTmJGeomBI6UCF2uDYi48IIPa98VJvoFPgxFUnN1X7VTx1NH7NDUFlQu13zAXFwNFvtlIv+WGX0iZv6NqSjFWCZgVJB0IJ1HoMXi7SJZRE23x+RyBtVIPwN8RHDfo84dLFFK8byF0VrvK53UHz9cevo6pUgm4jTRjKkdQCq+QZBYa67DF4qtAtJJlW2ZgL7XNr49g4hObuGxVfFKOnmXPGsMrstyL3sBtruAfljNzLyNRUtJUTwCWJo42ZckzgZgNLgna9sFFa2D6Jgwq5VVhRU2dizdFLljck5RuTqTiZh5xrXkneGi9opY5WjDRtZ/CBcgN74vtlGIotlLvBia4NzvSVEghvJDOf7KZCjX8vuk+l74pcRprsBgwYMQBgwYMAGDBgwAYMGDABgwYMAGDBgwAYMGOcs6KVDMqljZQSBmPkL7nAHtmAFybAbk4j+Ic7GR2h4bCauUbuNIk+L6BvgDr542/SDwR6uieOInOvjVQTZ8t/C1twR+tsd+SK6CajienjWJbWaNRbI494H1v3OpBBxtJVZDrynx1aymSYDK/uyJ9xxow119dexGEPAlFLxaqp7AJVKKiM2+1e0g+Z8VvIYOI8v10VXLJw54o46oAymQX6bj7aL3LD5XvfthjwLk+OCUVE0slTU2P1sh924sci7KLE+e51xdK/kBz/AMKknpgYFzTwSJLENrlTqNfQn9MKeILxisjeEwU1LHIpVupIXfKRY2yaX+OPa84tBVGCZ46pZHIjanF3Q7iORAT20DA301HlOUdK9Q9b1KcGeKVnaaapaJ40YZowvTDWsBtfLjUU0tg+m8DoTBTQws2cxRqha1r5VAvbXywi4lySslRLUJV1VO0uUuInCqcqhR9m+w7nucTXJ/HK+Y00LVSZZ4nkWRoszjI+QoTmAJFic1v98cKvmmrkeFYpKiWCd5IwwhgBkyi31YJ0F9y9tLnE4yT7Fj7kzh9Ialp4uIS1kqRlPrGBspYG40BIutrjTU4o+a+ENV0ktOr9MyADMRe1mB2uNwLfPHzjhUNn4W9FUvaTqxIZYkzIqgllYJbOAw2J0OoOPrFW5VHZcuYKSM5stwNMxANh5mxxJ6dhEWy8chjMapSTgLlUozI40sDZ7LceWH/J3B/ZKOGA++q3fv42OZte+pI+WE8HPqgss0JskQlaSncTRBDs2bwtY+i4act8fWoaQdWFvFeNUzK/TIuC6SAMD6gWOErroCiMe1caZt46CLKP+bLv/l0+K4ac48femSNIEElTO4SJDsfvE2I0A737jHDjHJUMshqIJJKWoOpkibRj+Ndm/S+OPL3LdUtU1VXTJPIidOEoLWXUsxW1gxvbS/f0w12D3wfnaNpBT1kbUdT9yT3W/cfZh/0L4q8R/wBJs0Zplg6SzT1DdOBGFyGO7jyyjW/wvph/y9wz2amigLlzGoBYm9zud+19h2FhjLSqwMcGM1DXxTAtDIkgDFSVINiNxp3xpxkoYMGDABgwYMAGDBgwAYMGMnEOJQwBTNIkYdgq5iBdj2F8AL+aOZI6NFuDJLIbRQp70jabeQFxc+o3Nhia/wCxM9Yr1FfMy1TD6lYyQtNY3FrHU3Aub/O9jio5n5ejrIsjkq6nNFKvvRt2IP8AMf62IWck8fllaakqQDU0pCu6aq47NcaBvNf5agdE6VogopudqpV9jamaTiSHLlGkbDtKW0sp37a+V9H3JnLj0iyvNJnmqH6kgUWRW19wW9dT3sMPp5Y08TlVuQuZiBck2UXPmTYDzOFXN/BZKuneKOd4mINspADG2gc2vl8wCN9b7Yl3roEBxrmCugq56iCVJoUYCUIXeJFuFUNf3Xtv0z6keffmaSoeohgnmlcSBJF6cf1U2pJjjQEBhbUtLLt2GMNLUSpVtehaOMxRQV0CAFSZLqroqX0227EjvfFlwXlK9MtNXKJVglPs7h2DZB7pJTKQbG1gbWAx0bSIRUjKsVZSwEM1BUCqprfdDeNBbfJdgfU4s4eGmTiDy9HPS1lIvUzAWzg6BgddUNsN6mWgoFVn6FOFXKpsAct72H2iLkmw7m+Fw5vkl/4KhqJx2dwIYz8Gk1I+C4y230in6vJ6xTUT0to46Uy5lZmYkSjUAm597XU441vIMJnilgdoAjSFgrMf2iFT0wSVjNze4Hyx2/8AjMn/ANFTjy+slYfO6rg/ofip34ki/u0q/wD7McS37g9w8oJHLQtCwWKjEgyEXLGRMt77XuSTp37YpmUEWOoOJYcJ4qu3EYn/AH6YD/0MMHX4zH70VHUj+7d4m/zhlxGr8ghqvlZoaeSARTLLLVrTrIHcrJCxzKWW+XKq3XUCxw05wpaiat9jRA8SJFOoGVXSNCVdYmsDmY23YWt64pf+2yR6VtNPSfidM8f+OO4/O2G9NFS1EiVcZSR1UosiPcZWsSDlNjt3GnpjfJrbFEDylzlO9SIYz1YT1CsbG7xxquZGeQsxuW8BD7aEHFpy3zXTVijpsVci/TcWawNiV7OoOmZSRic5s5QkypFRSTxxzS/WIsgEUatdna1s5BN/ADludhhTKYJVeqZX/o7h69GnWJirO1wrSKwIOhtY37X3uMGoy2iFbzXy5LLLHWUkuSqhUhQ+qODe6kfZJuRmHn8CEVXzHVV9uHxQvTVDaVTNtCncoe+fYH8vvDdwjnKON44pZ+vHKD05bWkW1rrUIB4SL+/YA9wNzb2xm2u0UhK3lWTh5Wp4WCcihZqcm4mUdx5Sd9Pl3DVPL3HIqyETQk2OhB3VhurDzH+oxPc5cVmlqI+GUzdKSZc0kx0yx63Ef3nNjtt6brScJ4bBRwLFEAkcYuST+bMfM7k4kut9gYYMZeG8RinQSQyLIhJGZTcXBscasYKGDBgwAYMGDAHGrqUiRpJGCogLMx2AG+IXhPCf6VketrEPs5UpSwtceE7yG2zN2Pp6KcWnFuGxVMLwTLmjcWIvbYgjUdwQD8sRhrKrhDJHMxqqJ2EcbadWInZbfbFhpby7aDG49a7IzxNw3i1IDS0j9eCTwxTSHx0w75vvKBex7emgLfgkvD+H0zJHOjlDeQqweSSQm2oUlixNgF+AxRcTiV4ZFZ8isjAve2UFTc37W3x8VoqeBWRK0CBemvs1VAgjK3YhJZgviDPlBBY7A7G5Go/ctjodcw11TJJNJOWpp6RVqKaMMrIFJy5XUbytqP0GnvX3KnMAq4iSpjmjOSaI7o/z7HcYScs0heoIrqSN6mJQ0daqApMuytm7SW7emlhbFBzBxuKjjzsCzubRxoLvK+gAUdztr2GJLeqB6nFLSCapcrEJCGldmOpACjc+QsFH5YRjiNdXf8KvslMf7eRbyuP7uM6KD95vkMe+HcvSTOKviVpJF8UVONY4fgNnk/Ee+2wxT0dUsqB0NwfMWIINiCDqCCLW9MTr5Am4RyhSwN1Mhmn7zTHO5Pxb3f4QMNeG1gljDgW1ZSN7FWKnXuLg64X8arT1oKZWKmbMWYbhVFyF8i21+2vfDSnWNAI0yrlGijsPh/rg06tkT2cuIcRSHLmuWc2RFF2Y+g/1Og7458NhkzySSAL1CtkBvlsLXJ2zHvbTQanE1zFxD2biEc8is0ZiKi3Y3N7X0vqPk2GHA+b45zLmXpLGubMzC2W9rnyxt42ocl17mFkTlTGnEY5BJHKgzhAwZL2JzW1W+hYWtY20Y647UHEI5gSh1U2ZSLMp8mB1GFPMPNKUsiRtGzZhmJBtYXtpfc6HTTC3liu9or5541KxmMA37m4te2l7BsFjbhyaHNKVIqa+qWNbsC2ZggUdyxsBrp3wir+S4C5lpmajn/8AEg8IP76e44+I188UFXSrIhRxcH5EEG4II2IOt/TC/gnEGZ5oJDmkgYAt95WF1J9ext3HrjCurRtvdMTLzFUUZCcSQdMmy1cQPTPl1F3jPr7uuKXpxtCemkbowJCi2R769gRYk3vrvfH7XzxqtpNQ5yZbZsxPawBvpf5A4lajhc3DSZqJWlpSby0m5TzaC+3mY9j29FWU18n8BkjaSrq7GsqDd7WIjX7Ma27AAXPew3tcteM8ajpgpfVb+Mgi8abdRhvkDWBI2vc6A478J4nFUxLNC4dHFwR/I+RG1jj5hznBPPVVUkZkGVo6RQPCpRk6shdz+zT8Q32NwcVLlLYL7mrl5K2JbNklQ54Zl3RtwQRup0uPgdwDieg4FxCvyrxNhFBHoYYm/bsPtOVOinfLp8AdcaeTuKiOOnWzClqR/Vy5uYm1+pYndTYlGPll+7evrakRRvIwJCKWIUXJAF9B3PpiW46BDzxDhFWJEGWgqiFkUbQSWsG9FYaH4eijF6Dj5/S01RxlRLO3QoCbrCjAvNY7yMNhce6PL0BxfQQqiqiiyqAAPIAWGE/nsI94MGDGChjBx3iiUtPLUSe7GpNvM7AD1JsPnjfiO+kegqZlpxFD14UkEk0SsFZwtsoF9xvcb7aY1FWwLeDUXGUhSqSdZnlHUelmuAMxuBG17qbEDKbAY78LSo4hXJNVU708VGvhjf7UzbsDswUAWPw8zhvwXnakncQktBPt0Z1yNfyF9CfQG/ph1xfiCU8Mk8nuxqWNtzYbD1O3zxpt31shKc+cYNxCIZJoIsslZ07XEepVdTrcjMyj7I1sGvjgnD67NOsa0VRDVt1bzlw+RgAFZQDdUWyi3l2wmmpJBHnr6NaynlkM5lpXJZGYWOYAjOFXwAjQKoxZ8o8E4eiLU0UIUSro5DZipP49RqP0GNOooHdzTcLozbMsMd8q3LMSxJCrc3JJNgMY+WeDytJ7dWj+suLIm4p0OyL+I/abz0xmoR/SFaZ21paNysI7STDRpPUJ7oPnc4opKiRahUOUpIrEWBDKVtvrYg38hbTfGfjyLP3jfEOhBJLa+UaDzJIAv6XIx+06x08QDuqge87EAFmNyddNSSfnj94xw9aiF4WNg438iDcH5EA4guJcE4nLkhkGdE91sy5fK5PvHTzF8axwjJU3RznJxdpWU3NfDeuYjDKqVCAvGM1iy6Xt30OXXbW3fCPgfAKpKj2urbII7szM4JICkfZJAFvM7DbDCXg0bTUdMxLtBC7M6kqUvkVSCpBUkg212jbH5Oiu5ijaorih1RnUQoR2kcKM1j9jxna64z68opxXRHjTfJnOgSXoL7XA9TDLeVSBmkizktlZb5iBfQrci+UgADHVOEpOpgipmgpnIMzuMrSAG4RQTnAJ3ZraXAve4YVENTbNUVRjW/u00d7fFmDsfiAuF1bTRGmjqImqZeq0YUtUSjSR1UEqJEH2hppuL21tzXJrj4N0j1UwrlWGuppZjH4UnjRnzjsT0/EjWtcEZb6g+XK0kL08ixmlpEms0ZPifOjIHlsSAodkAUknW5tYDGXhddTurHq1UTJuyTvICDlKsqsz3BDLsD7w1OhOx+IMSYVnjq0YANHOmW+clQpkRcgLWIAZNTYXFxetTSp3RKXYv41wivjq3ngzNmPhZSNAfskN2H5bYfcn0BiWaSWRXmd/rbMDkIF8rW0Bs1/4h2xl4fDG7dBp6uBrf8PJIBcD7kgBZ1/dkNu9sZ4eEZ6Ooo4bJJHO5K7Zg0hdL37MhXU91t2OOnrOdRdJe5hQUW5Io+Nj6rrLYtD9avkbKbj5qSPmDjbTTq6K6+66hh8CLjHzvhdBxJozSZDHET4mYe6DuAe4PkPPcDH0OjpxHGka+6ihR8ALYuSCiqu/8GscnJ3VEnxilbh8rV1OpNO5vVwr2/vkH3h9odxr64ccY4dR1sUbzkPCCHU5yqtfa9iAwNxoe9sauGzvL1GfLkzsipbWysVJYk2N7XtbY98THD6RKaofhsyh6SpDPTBtQCNXi18vfHpfGf3RtOyRgrqp0SJyWjlSSRKcWDMVlPghNvq3gVFdVHcEW8vpXKnE5ZoslSmSpissyabkXDC1xZhrp3uO2EHPVFTUcT1cIjp6iR1UzAAvZmAcxqxsXy5jpra+J7gXM0kdUZZOq0EaZZJplyyPCzDpsUAuwSQsM4v4ZdRfGmuStDodLDW8OqJoaOlNRBUHqRC+VIXJs4YnQLsQLj0744cbg4nTKnEKiq6hikUyU8QIjEZ8LerkX3YafLFlwDmKCrVjEWGS2ZXUqQCLqbN9kjY7aHCHjnONPKHpaWJ66R1KssXuAEW8Uh8IHqL/ACxE3fX9SljDKrqGU3VgCCO4IuDj3hByLw6op6KKGpK50uBlN7Lfwgna4Gmmmg3w/wAc2qZQxKRfSJw4yNG0xjKsy3dSFJU2Nm1FviRii4nViGGWU7Rozn+FSf8ATE19HfC0/ouBZkV+oDIwcA3zsW1v6EYqSq2QxcQqIq3itGkTJJHTxtOzKQwJJCoLjuDZreuGH0hQ1MkUMVPEJBJMufMuZQB4lzi48BYC51sAdCbYc8K4BS0zO1PCkRe2bKLXte2mw37YZYvLaoHy7k3laobqy2m4c4kuBGfqnHcCJ9QBa9yft+lhYc78QeKmEcH7eoYQxejPu3wVbtf0xQ4k/wDiOLnulDD/AObN/tGP82Ly5O2B/wAG4alNBHBGPBGoUevmT6k3J9ThXxviIp6qGSW/SZGTNb3WLKdfjb/q2GLTyrOqtkaOS+WwIZSBexuSGuL6i22OvEjDkyzlMjaWcixPz74R097szLa0R1fzdK1YiUzB4syrbL79zrqdfmPLDKm4WPa6pOtOgskoyykAdTOCLG4HijLaW9/0xwpFjhqXip6A9ZRdWaRQrKdMylizAdjlUkX13x6ko3eV4ZXBMgEtW66KsYuEhW+oDWYknWwkOmYWmWUJUoLozBSV8mYamRQhaIMtK8gUyF2z1TkGxaSzOsWmUEAliQBlXVulJWz1ANPAsdP0v7NWOWym1rqov41yMvhyqwPizDDbhHETM0sEkDGK5VSyiwUrcK62FhlNwQCLEKTmBvp6pUCCDMwQWLFrnTS2Zj5i2Y66EDUFlRSj42aPylp44qdYKnIwU3VSMxChrpcaklRlGbzW+PCVEGRYlid0DZlCkHVXEgNg2YANY6i2wxqp6FEZQ1yx8VyxszDe42JG4J10JubE4/ZqoCOdjbPHmUny0zLr+6ynCzQtWKhu2anClzchlU6grbwAsV1RTbKLlQcZH5VjdEWGTMFdQSbXVAqLp3EgCaNpYyMbYpppB1Fj+8GY+oFhr82H5HGGShW5MJYNHZdGv5XVc2gsNh7t7Ag2xVJkox8xcQpw601QhZMocv8A+H72Vs17hvAdQc+xAIzFc70oEsaVDMc3hp6uNirEHXpyFLAnuCfC3kG32z0y1Byv9XOpFnA1Nr62uRmAZiL5gpbML4S8KcIWoKoEq5ItpZD4WXp2ZnyG+jtqHUa3awy4JrXYN1LSFKmqkDyzNBEojWRy2rKzEgba+FdB9k+eMPK/OWbqCrkUd0OW3xGnyt333xsoVqBK5Uq9RCFjlVzlE8dyYpAQDlfVhe1rhx2BHLh9DT1FRJnocnTPjcyArn0OUKjZSbG58tL6nFxSgk1JdnOSlacWNuVKkypLLYqkkzMgP3bKL/Mg/O+PznPhLVFMelpPERLAfKRNR+fu/PDuMAABbWA0ttb0tjFQVckjOcqiNWZAbnMSrZSbWsBcHv2wbt8kdFpUzFRTQcQoo5XW6umba7RtlKtl7hluwBGuIShTq9X2OCsrjNEYfaKx8qLG24S6gsL2NrX0xWcqDoVdbR7LnFREPwy3zAegcH/Firxb4lJrkjg0kMTyVJLVM5+tJtsl0VRbTKBqP3idNgl5J4hBQ+2Uc8kcQp5yULkLeNxmXfc7/mMX+FNZy1Ryy9eWnjkksBmdb7baHT52xOV3YMFDz3QTTpTxTF3ckAhGy3AJtmIA2HbFLiK+kOFYY6SdFCCnqo2NgAArHK2224xa4kkqTQMnFuHrUQyQOWCyKUJU2IBFtLgj9MSTctV9LHel4kxjjXSOaNXFlG2bcCw7DDbnjjc1LDG0Co0kkyRDqXy+O++Ug9v1wrqpeOMjo1PRnMpW6yMNxbTNjUboDzk3iklTRQTyhQ8i3OUWHvEbEnsMOWYAXJsB3OJ/ldPZKSCnk/aRoAwXUA777d8HGakvbQiNTci9ifU+gHb/ANsebNnhC9/odYYpSH0UqsLqQR6HEvyB41qqk69eqkIP4UPTUfLKcaeDOVzlfcVNe4LAdvl38gPTGb6P7x8KpiqFyUzZQQLl3LHViB9rG8M+ePlRnJHjKhrzFFLlSWAZpIXzhfvCxVh8bH9MQ/M/EZK14kjp5VZLgqRrc2/IC25tj6LQVglXMAVIJVlbdSDYg20+Y3BBwl4pxtJJDSwVBhnvYP0wy5re6c2n8tRv2x6cc3H+W2jzZIqS70znLF05OHxlryRBzIfKMQlWv+HOY/mB5YKOgknopHRxHLVHq5mUMADbIpDaW6YVT8zbGB1yUlYrZhVlRHK7NmLZ/CjKbABDmJCgAA5ha970XEuJCnMEYjLCVhGtux00/wAAdvL6s+YxwjblZ1VGSGi9kgaNHdsxZhc+4oFzl7KBsLAAFhoBjZBHHGMkje/YXNlU2FgFy2APlc5tBqbDHOrUPUKGsQNACL6hWY6eWqG/YqmO1cZcpUwpOhFioIBI8sr+E/NhjfZRdxGZx/V3YLN71LKdnZdQreT2uCPtKSR3CzHG+Z4zFUuvh69KGyHdJY3Mcin8QzIP4L7Yz8zVyovs5MiRyH9hVgqUINw0FRqoINrBmZR2sNMMuCcmLLGXlbSUE3sMz5lsztqVBcZSbZgWQMCLkY7JRirZi29I2Px8GeoaEhpWkWlgU7FlUu7Eb5ULkt6RW7jDihmB+ogYlItJZj97dgDsXJuWOwv56CP5t5fanBlR7Zs/1gYIVzs0j+JiFQvexkvoseULc69uWapZ40HTknRNFggjKU6W+80pUTHubki+uW+uI4pxtBN3TK2uyMnViY2jF8w1BA8idyLk6aHUHc4y8V4QakIY8sTFrysC1yV8OUhbZ7a2zGwIBscN4DKw8aog+7csbeuigfrjJwh8okVQTl1VdtiyAeh+r/XHJOujZx4ohimppybm4glO2YSe6bekgX4Z2wllp3fhkiR36iSP1VG5YSsX9db5vUEeeGPEK/2nhs0yqV8DOl/OM5gdbH3l/THLilOZqgCkdoZiitNMp8IQ3yhkIKyObG1xdQN9gcJuE79jMlaoR8qc0JBAYSkkkmY5FXW97aeY1v2O+LbgMDpAgk/aG7P6M7FiPkTbHHg/EKdz045RLKg8TWAZraFjlAU6/d01xrrq9YyoKs7NeyoLk23PkALjU+Yx2yS5PUavZjHHituyf4z9VxWhlH9tHLAx+AEq/qp/PFPLMq2zMBfa5tiY53ax4fILi1bENdCA6spv+eOnGv2jCXYZSpvYWudB69rdzb0x5vqMnpwUqPTjhzlRT4luf+KVECU4ppFjaeoSEuVDZc4NiAdNwN8b+FVhRMsgNu3cgeR/9sL+c6N6ynVabKZo5UlVXOX3W8/nhhzQm1sTxyiZJeQWnFq6vqagHdARGh+Ki/6WxaAW0xF1XF+Mxo0jUlLlRSxtK2wFzik5c4kamlhnKhTKgYgG4BI7Y7SutnMnPpTlVIKZmNlWshJJ7AZiT+Qxsb6Q+Fj/AL2nyVz/ACXFJNCrizqGHkwBH64Wcb4dD7NOuSNc0bi+UDdSME1VMChqKplCyQNE8T2dWLsuYE5lPuHfc49nh/ELLb2a9zmuz6i2n2d/PTtjR9HU2fhtKfKML/hJX/TFHjyS+kx29HZZ5khQ8JrIg4PRWNgxbI8jEnL5OLa2A7Y2/R41+GUn/JUfkLYoWF9MSv0bPloBGxAMEksbX7ZZW/Lw2x3xwUIUjnKTk7Zt4m9RTytLDF1o5LZ0BsysBbMN7ggAWt9kYm+HcJnnrfapIjBGHEhzae7bzsdSLk2A3xc0VfFKCYpFcDQ5Te2JjnbjUCstPPTCdCA5zG1tSPDpqRr5b49OOU9xit0eecY/k3o8cRfqx1VWv7ImBUP31hlzlx+ElmAPcLfYjDXmaGRpKMohYRziRiOwytHb4/W5vKyNrjBU01kFMsjPTVkbpFnJZo26RYAMdShUMfESQVFtDYNKfjY9linZSS6gFR2fKbg328SlPiQMeeFpnU6MLVNvvXvY2IBVNb/GMi3r6Yz15h2ElQ58oXkY/Mpov8RGP2qnzolQltVP4hmAawPmNXXzuy6X0wxqGkYWiyqD/aHUD90d/ibDbfbGynznjZkhljkY1UKs1lE1ZIzufJYoCzH4ZhuL2xect1ySQIARmRQrLcaFfCfdJFrg7E6gjcHE7xXhkTdWzMEVT7VWMbyELqYojaw8jlAVfdAzXyylZQVEMUhyhSlM05Qi5hDHJFGPVEWQ/vFjqdT2pTVHO+LLvnXiSrH0gSXvmIUnMoUXNsjK99tEOa1zYgHE1ytCZIxKUqpUYnx09fIwH7yM6OD6WJxlqeCt1JhPpDFOVkCaFEc9SGZT2MTSFSfuhr6DFbQ8NtLllPSqreGoiAUVCj76+6zDurA9yp8pqMaRe2MuHLBpleYH7sskwP5Stc/LH7w5zmme1zbYeYeXQefb8+2NE08iRtnClgLKw91idBcE3Fz2uR64XScTjpIVd9eo1wMyhiLbgMVubAMQNfEccuzZipI3h4TKsq5WSGW4+TG4uAe/ljtD/V5ispyx1MaKsh2WRVyFSe1xlI8yGG9r6uYphJTpGv8A3l0Qeqscz/8Alhj8sLKuSOaF6qsLNT5iIoAfCyhsoZwCM7ORmAbwgEaXucYdylrsj0IOAl+H1DdeCRvCVUoL31Gq9iDb44tuCNLKzVEqGO4Cxo24W9yW8ixtp5KMHLHFYZ4vqUMax2TJYDKABYC2lrfyw0adAwUsoY7KSLn4Dc475cjk9rfk544JLT0TP0ge7RDzroB+pP8ApjnVcJrnlEhFO2UnKWkkBt6gLl18rY6c3HPV8Nh852l+UUTH+ZGKrHny41OKTPRCbi9En/R3EMoB9mJ1zWZxp2t4D88fsCyUoEtZLDHGh97qE+gGqrqdsVeI36TyDDSxm1pKyFTfa1yTf00xyh9Lj5I2802jrxnnLhz08yLVxEtG4ADbkqQMa/o7N+G0n/KH6XwyHA6TtTQf/jX/AGxuijCgKoCgCwAFgB6AY9DaqkcRdzQJDR1HRYrJ0nKFTY5gpIse2vfEhytyZRVdNBU1HWqHdAx6srsA3e2o73GuPoLC4sdjj5zy0nFqaH2SCjjyxu4WaaTwlS5I8K+I/HGot1oMv6CijhjWKJAiLsq7DvjRiN5f4rXJXtSVzxMZIerGYlsoIazKCRmOmuv3cMucnqFiU08kq+KzCGFZJGuNAuchU/eOgxlx3RSgxJ8tjpV3EKUjR2WpQeYkXK/+dT+eJ/kyvkWsLSmyN9UZKiq6ju9xZIwtoiQdwikC9s1wRig5vPs9RS1+yo3RnP8AdyEWY+ivY/M41xp0QdcUpJLiWDL1VFrNtIv3Sex7g9jfsTiX4vw6trnjWSBYES92LBjra+2+21reuLlmAFybAdzjzFIrAFSGB2INx+mLDI47SMSxqWrJSorUSohR450gpAcr9GRg7lDGDdVIyqpbxHQlh2F8aKFoy8kAZWhqQZoGFmW5P1ii91JDWkAO+dvunCOLjNZBXCOdiVdwMulsrNYFbbW/0scOm4Wsk9VEh6eXpTRsP7OY9QEgeoVSV7h2v7xxjJjlBp3dkhNS6OPB5xC70s7NZrBc2gUklVsWbNdrAKFzD6s2Y2NmcbmItG+YKRoVBOg3KgXI0+77vkBlJwSwCsBSQdGrh99QSLg6ZlIsTGwvYjXsbEaeOHcVcEwVUbWVcxYD9mAGJNxbwoMigrdiWvsQca/JWjY8mpFk6cYAESWcgbG2qD4X8X8K+eF3EqHqQ1zHeUMo/djTLb/FnP8AFjRFTsNYJQ6qSLZvdtoQQDlPw8NrfG/ozzWKtFZSCCupOve6hhrr4fnc4i0U6y0g9oLEArNFkcHY5SSB8w7/AJY/UiVIunLcrGQFbUm17JtrmHu33JF++PBqJ2OkQ30Nj4dLa5ipa/oBb1xlqUWMBqmQm2yKWa5tc+uup0Atci9sAe7dZi76RILEtpe176bAm9j5Dw7khF63rJ73PRU2sGNmALalSAu4Gq5iCGVgPs+uINNO6QxAKg8QIylCgylGuDmzXAsLKNW94LZuzgp/U6U/WnWWUAARKe+mmcjwonYAE6Lqb4oh4m4nEakzyNaKC8MVgSZJT+0yKoLMVACCwOvV8sK0pnqKeSjEcqdNi8DyRsiul7hSWAsy5smu9gfOzOkiigmqGy6UsCCNfJSGZiPV2Fie/Txh5P45WVE7F7GGxzeEAIewB3J9DfDFCX5rwc5yV8X5PPLddUU0Xs/sMpkufENFYk7sx0Ftr3OgGKei4WoGaZUeViGZrbEagLfUBdAPhfcnDAnHGvrEhjeWQ2SNSzH0AucWeTk7SqzUYUqsm4PruMO260lOE/jlbMfnkUf4sVV8TXIVMy0zVEwyy1TtO9/shvdHwVAoxMJW1Zm68AWSOokFVkWTJO0MY6YFmOTp+61w2ubtfQ4269jZ9Nxg4zwanqkEdRGJFBuAb6GxFwRqNCfzxx5ZlneASVAId2ZshABRSxKKbdwtgT53xMtxbiVRV1QoWg6NOyx5ZgbO1rvZlF7g6b22xlJ2BXzlyvHQwK9DNUQSvKkcaLM2QlzbUHU6X74+nILAC9/XEBNHxGrq6NKqjEUcEplaRJA6MVU5dNxr5+fpj6BizelYQYTcx8ywUYTq52eS/TjjQszkWvYDTuNyN8OcSn0j0DtSioi/bUjidP4feHwK3Nu+UYkUm9lYtihrq2tpao0opI6ctrK95HVxYjKBpp2PnucWfE6ITQyRMWUSKVJQ2YXFtD2OF0nNVIlNHUyzLGkiBludTcXsANSRtoMeeWOaoK3qCIOpjIusgykhhdWAufCdd9dPhiu+66IfMqeGJFbK6UsozIlPTgzVbMpIAZ3F0XML2UKpB3x9RpwlbRmObIxePJOqMGCOVGZbjS6k/wAsI+feHyXEipPLEVPUhp8kZewJvJLfqZLaZVB1Hwxj5M44wJOWkgoI1AzR3CiRrWUO9uow+0co1IFyb43L7lYG3KM5kieiqwGmpGCOD/aKNY5PUMAN+4N8Nqrhbi7UsghY7rlBRvUr2P4h874W82cNlV0r6Vc08Is6D+2i3ZP3h7y+vnh1wfikVTCk8LZkcXHmPMHyI2tjNvtEaTFHDeW36/tNVL1ZB7oAsq+Xxt8B56nCGeroY6qVJTUszSHPL1mUBttFjZRZQAt7XsO++K/+mo7klZAgJHUyErcGx2ubX7kW9cR/Nfs9VIiUaiSdm8bptltbxHby17Wx1hH1JfxFr9jjNqMfs/6OZeHHrpC0rm6NJTT3BkjKlQ6FvtqQykBr3AYG9gcd6qsZUaKvjsjDKaiLNkYfit44j8br+LHjj3DURYZZZ5I4qeMoRHoz5sgHiGo937NjruMYuFtTzAmhllhnUXCyO7K3o6uzBgdiR4hfcY83CVOSWjpySdHSTl8sGlo6hbOrAFTt90KyHtd1B7Bx9wX28TFf1JOjYqR4LlbAgIdbgmxOcf7aHCxJKaos9PSyGdlDSmB+l02I92SRWUFh93xHYkWIxpoonaTpNU1tPJa6o5hYMBuUcxvmt5XuO4xfUZo08Qo62SR8khRM6lCGAygICQQN7vYeVgw+OaPhEVOElq6hQVy9wAWUkj3rsx1yjva4+0ccVWSS/SeuqowbZxJFErEaHIVEbN8Rp64/FenBWOmj6VXI4jJmGaWIZWdmJcsWGVWscxUtbfXE9R0Bos084CUyGmh/8V1s5H91Gdv3nAt904W01JCEleSR46WKRkVVdlMjKcrySMpzu5cFQL2so3vp4nk4aknSM03VvYyiWQkN6te2/a2X0tjnzDwGaOgyZzKUmaUm1iVZnJuBpcF7m2m+mNRxtySnqzEpabW6NfLkNFNK8kDTXydOSOR2YMpJt75Y2BvbKRa501wUPAqykZhSyRNE5vllvcf4d9NL31ttjpyk9DDAHjkQMwHULsA1wNrE6a30H64e0fE45GKqTmAvZlZSR5jMBceox1f2NqK18kilJJt7+DKvBFcXqbTSHuRYL6Rj7Pxvm9drJeaT7XPFw1CSmktUfKNTdUJ83YfGwJw45n46KSLMF6krnJDEN5HOwHp3J7DGbl7hwoqeSapkBle8tTKdr22H4VGgHp64xb7f6HSkjzz1xRaekYZlRnGVM6ExnuVcrogYApmNrFhiJ4ZQQVJUUL1sMdQnTkV4jJF0xcsiyNqn2hcMRc7Y58Z42Zah5xIwRZFCyguY4IreJainIVrNqcxFjmGoti25H4N0UaW0QMtiPZ3bouu4dUY5ULX1C3Ggxr8Yl7KPp5UyoALCyjsLDT5Y+d8u8Sm4VGYa6lkyl2dqqL6xWZjclwAGXSw8zYaYouLc80dNUGnlLgqAXkC3RC2ysRqCRrtbXHLnPmFRRXpXWSSpIhhKEG7Ppe48hc/G2MxT6a7BQ8M4jFURiWBxIjbMPQ2PqCD2ONWFvLvCUpKaKnTaNbE+Z3Y/Mkn54ZYw+9FDH4ygggi4O4x+4MQEvwPkGhpmzrH1HB8LSnNkF7gKDoLedr+uE3M1akXFaV6Q9Spb6uohQXvEbeJiNFK76/h7DFXzXTVElJKtLIY5ivgYb6G5APYkXF+174TfRnFSeyB6dMshOWfNrJ1B7wcnXc3A9dt8dE9cmQqa2mWWN42uFdSpykg2ItoRqD64+VcZ4JJ7VDSCL2gxjOkQBSnhjzEIDe97kZncksbZRubfRa/mWkhnSnlmVZZNFX47ZiNFv2va+GNWHyN0yokynKWBIDW0uBra+JFuIFvDavpdKmqahZKpwzaKFuAbmyjZVvlBOpy9zfCbidBLQTPV0iGSCQ5qmmXe/eWIfe81+18cRHH6R4nAqHlHUmAkkt9dVFCCcgU3SIHKiKu7OrdsXnL/ADd1G6VQhjlMjR3VSYw9i3Sz31kVdzYKSCBjTjW0B/wniMNREssDh42FwR/I+R9DjUqAbAC+JfiXLksMrVPDmWORjeWBv2U3xA9x/wAY+ffGrgnNcU79CQNT1I96CXRvih2dfVcYa8oDevoo5o2jkGZTuP1G2oxFcG4bGvE7UxJiiUlze4BIItfvqR+TeWKiHl2mCgPEkjfadlBZj3JO+vlfG+ko44lyxIqL5KAP5Y6RycU0n2c3Dk02iR5jo6qDpxUCOsRzM3T1JdmJOYnXvf5+gxy4W8tfBNTTs0c8RBWUCzIdR2tqNV9Q2Kd+LXzCGJ5SpK3FlW40IzMRex0uAdjjPy5wh4jLLMQZZmzNl2Ua2Avva+K2vT4tL49ycXztPX9iV4pxmqMrwUSssVP4AsaX0Xw66HTQgAdhio4bQtNHDPUJlqkRgG2IzXGoHmLG3Y+WOMFBLS1EskadWGc5mVSAyNqSQGIBBue99fTVxR8QSQsozK62JVlKkA7HXcaHUXGmGRpxSilX+9iCdtyZCcm8vQTZ+uW6sT2Md7aDz7nW437Y+jYX1fBaeR+o8Yz/AHhdT8ypBOCHhKJIskd00IcAmzjte53B7774mTJ6jtsuOHBVR1i4ZArZ1hjD/eCAH87Xxk5h41DSIJJBmc+GNFF3cm3hQb6kD02wt4lzaGc09AntVQPeIP1UXrI+38I1NiMdeB8uCJzVVUnXqiNZG0WMfdiXZFHnudb7nGPmR0r2OfLnBZWlNbW2NQwtHGNVp0P2V82P2m77DTC7m3iE1S89FCkbqsSuyFyssoJJzQH3QUIGpuC2ht3Z8cZq2GqpqaQxyxOEbMLBvCr5TbxBHDWzCx3+cVwDgrTyFFjSHpzkvAjGOaiJUANE+oaN8pOW2U5tNsaj7sDXl+lqKySmqGER6TENVC6SugDK0MsVrZs2h1sLEjfFzxOdoYJHijLsiEpGo94gaAD/AGxzoKOKkhIDEIuZ3d2uSSSzM7HuTck4OC8ap6pOpTyLIoNjbcH1B1HzGMyd78Al/oxEElNIxdZqiZy1UGGoYk+FlbXKNh2962GlJyNQxVK1MUWR1uQinwXItfLsCB5WHpif5+pEFVB7FdOJSHRozYZPtNMNiunfe3e1sfQYgQoDG7WFyBa576dsWTfa8hHvBgwY5lDBgwYAMRXG+Wqtapp+HSpCKlctRmF8pG0iju1rj4n1JFrgxU6BKQ8h0SU0sUo6hkF5Z5Ddyd82Y+7Y6+XnfXHD6NeLTTRSxuxmjgfJFU7dZRfz1JFh4u9xuQSeH0oGbJEGz+wlv60Yvfy30v8Ag87f/wBq+FPTinQ05QQBfAV90KP+u/rfG2/t2Qy8x8CWpRito6gRukUwHijLC1wRqPiNRra2JCqpnp1qJKqCF5ap0WnplYyZpumY2fMQpGYHxEAWUG5ucbovpGj6hZ4ZFoi/TSqsSpYb3FtFJ2Pp8bWiZJArjK495GFjuLXU+oO47HC3HsELwrik9CWp2Z6xKeESTtoDDe3hUsRn0u9mIIVdybDD8rw/isINkmUbdnjO/o6Hby7YX1/KTGNKaNiYZpzLVyO31kgvmC6AXDEKulrKMTz1jS1ErQtkqamb2SILbNBBCbyORut7E/4MWk9oFIOFcRpf+FqFqoh/ZVJ8YHksq6n+IfPHoc7LFpW0tRSkbsUMkfyeK4/TCuHmiri67nJU08dR7PHfwSyOSospAyEBiVube6TispuLjotNURtShCcwmK6WtrdWZSNbXviNe6Bl4TzJw5hlgqoDck5eoAbsSToxvuThylQh2ZT8CMI3i4ZVKJGWllViRmYIdRuNdbjy9ccH5C4U2vskWvlcfyOI682Chlqo1951X4sB/PCKt5s4bE5d6qHPly2V85te9sqXO/pjxHyNwtSP6pD6Zhf/ANRONVHJw6H9kaZLOsZ6eQEOxsqnLqCT2OGvkC882zTaUVDPL/eSjox/G7+Jh8Fx+Hluqqv/AJhU/Vn/ALvTXRD6O/vuPTQY01POlKsywgsXd3jBIyr1EtdCW1BJZQDYg5hick5sqpxLJDaMRU8c/QtcyqSwmXPupQqVGW2oHnppJ+FQK6pnp6CFEjisGYJHFEou7EE2A0F7KSST2NziPruOe2zGP60xFPq6XLGOs6MRNFL1dAw8JtcWU5hfTHGmr0lpRRSTsKmKRHo5MrOzq1nhkOUEkBWyM2wANzrh7w7lUzvPLXQxp1TGwjjdjlkRSDIGAUqWFhYdl1NzhSjtgycj0dnSpoiTTTrknilcloHjvYKTqQDdMp7EEG1sXYQXJsLnc+eMVRPT0cF2KQwxgAdgANAANyfQanE/wHnpJ6gRPC8Cyi9M8mnWA30toe4FzcfK+XctgX81ytVcQi4fOxgpSA/l7SwscgI0AB7b6eZXDHjHJ2VxU8OYU1QotYC0coH2XUafMfzsR6+ko0nshFSTnv8AUZP2nU+z0+977+nyw05RaqNJF7YAJ7eLzt2zds1rXt3xbdJoGLk/l54epU1TB6uc3kYbKOyJ+EafkPIYpcGDGG7KGDBgxAGDBgwAYMGDAH46gggi4OhB74gq7kKUO0NNUGKhnbNPDfVe5EWhsG2IuLeo0F9gxVJroCXjMtLR0T9RFFPGmXp2FmGwUA7knTXzucLPo04PJT0t5bqZmMiw3JEKtsovqNNT/vfG3nLls1saKspieJxIhsGUsNs6ncf9a7YUwc5y0p6XFYek32Z4wWiksPzVj5H9MbW40iFRU8Zp45VhkmjSVxdUZgCRtpf5/kcd/Y485kCKJGFi4UZrfG18Q/LPLkdfHLWV8Qdqs3RW3jiGiBSNQSNbi19MeuUoJIeIz0sM8slJBGMyykNlkfVVU2uAFv8Al88RxXhg08Z5OboUsMAjlip3Z2inJHWJBF2ZVOt2Y+7qSNsdeaKHLR0yCJhEk8LTRpmkyorZiBYZnAa2w27Yfce43DSRdackJmC6AkknawH5/LC/h/O/DpvcqowfJzkP5PbBOXYIccPlqatD00HXmqahUqIiVyKsUSF0NiCwudfQ4o/pA4TCKCMNFGDE0KJlWwQNJGrBB2UjS3li1Ug6jXyOPMsSsLMAw3sRfbbfDntCj5hJw+mi4pPGBRRW6PTM2jrdMtoDfRrj88uF6RRyUKQQU7e2w0v1jIDmjanlVgjKBYu7A2O++PrrUyFsxRS3nYX/ADx7kdVBZiABuToMX1BR83XlCZpW8LSRmWKbNMwDOJI2jnU2AIYDKw0Gqr5Ya8K5BCJllqJCyvJkkj8DdKQgsjnUNdrtcAWLG1sMeJc98Og0eqQnyS7n/IDiiRwQCDcEXBwcpDRnpaOGBFCKqKiBAfJFGgJOth6+uPzh3EoZwWglSRVbKSjAgEdtPiPzxB8N4SeIVdXFxCeV/ZpbLTqckZRtUYhdTp6/Em+O9UkfCK1ZVAjoqpckgA8MUiDwtYdmHl3zHDj48iz957pVjraWrqh1aMHpujHwxOfdkI2I7G/l8Bim5o4BHWwdNjlYeKKQbxuNmFv5eXyOJiv4hVcWRoaSERUjizVE66uP7tP1DH/KcWnB6HoQRw52fpqFzNubC2tsHpL3BPctcqyrIKviEgnqgLLb3IgNPACB4juWsN/iTW4MGMN2UMGDBiAMGDBgAwYMGADBgwYAMGDBgAxyqqZJEKSIro2hVgCD8QdDjrgwB5VQAAAABoAO2PnfB5q3hhmNRRtULNK0rz07Zzc+aGzWA/LH0bBjSdA+dVnHIOJ1tBFTsWjid55QVIKsgsoII8yR8xhh9KlJCKCV+jG0pKojFBmBZwNDa4Nr4r1pIw5kCIJCLF8ozEeV97emMPMfAoqyLoyl1UMGBRrEEbbgjv5YqkrRDbQ04jjSMbIoUfIAY+e8D4AlfPXyzS1AyVbxqElKgBbDbDj/ALFTp+x4pWr++wkH5EDDXlLl80cUiNKZmklaVnK5blrX0BPlf54tpJ0wT/LVB7JxaWmSSV4zSrIBI5bXqZe+Nf0tRX4ZK1r5Gja3/wBxQf0ONHHuVZpqsVUFW1M/S6RyxhiVzFvtHTW3btjFU8hSTKUqOJVkit7yhlVT8VsRipq07A3l5apWpZIoYIoxLEVuigHxLobgXPY/LEzy1z/BHRwRSCWWqRchhiQs90OXXtqADv3x9ApYAiKgvZFCi+9gLa48UtDFGWMcaIWJZsqgZidSTYak+ZxlSXkEfwClrZeImuemFLE0XTZGfM72N1YgDQ7DXsMWNZRxyrkljSRbg5XUMLg3BsdLg474MZcrKfgGP3BgxAGDBgwAYMGDABgwYMAGDBgwAYMGDABgwYMAGDBgwAYMGDABgwYMAGDBgwAYMGDABgwYMAGDBgwAYMGDABgwYMAGDBgwAYMGDAH/2Q==" alt="" width="100" class="center">
+
+    <h4 style="text-align: center;"><b>(preferably for facche to cope up with online semester)</b></h4>
+
+   
+</header>
+    <nav>
+      <a href="Homepage.html" style="padding: 20px;"> <button class="button">HOME</button></a>
+      <a href="campus tour.html" style="padding: 20px;"><button class="button">Campus Tour</button></a>
+      <a href="Campus Groups.html" style="padding: 20px;"><button class="button">Campus Groups</button></a>
+      <a href="Triple N's.html" style="padding: 20px;"><button class="button">Triple N's</button></a>
+      <a href="library.html" style="padding: 20px;"><button class="button">Library</button></a>
+      <a href="Workshop.html" style="padding: 20px;"><button class="button">Workshops</button></a>
+      <a href="video section.html" style="padding: 20px;"><button class="button">Video Sections</button></a>
+      <a href="Contact.html" style="padding: 20px;"><button class="button">Contact List</button></a>
+      <a href="FAQs.html" style="padding: 20px;"><button class="button" id="faq">FAQs</button></a>
+       <div class="search">
+       <input type="text" placeholder="Search here" size="25px">
+
+      
+    </div>
+
+     
+    
+  </div>
+    </nav>
+   <img src="pic1.jpg" id="image" width="100%" height="400px" >
+   <script>
+     var imageSources = ["pic3.jpg","pic4.jpg", "pic2.jpg", "pic5.jpg", "pic1.jpg"]
+     var num = 0;
+     setInterval (function() {
+       if(num == imageSources.length) {
+         num = 0;
+       }
+
+       document.getElementById("image").src=imageSources[num];
+       num++;
+     } , 2000);
+   </script>
+    <section>
+    <div>
+        
+    <a href="#NEWS"> <textarea class="NEWS" rows="5" font-color="black"> NEWS FEED 
+                                             "Panorama of Events"
+                                            </textarea></a>
+     <a href="#campus"><textarea class="Campus" font-color="black" rows="5" >CAMPUS LIFE 
+                                             "Xplore beyond classrooms"</textarea></a>
+    
+    
+                       
+    
+      <a href="#fest"><textarea class="Campus"  font-color="black" rows="5" >FESTS
+                                             "Sparkling Nights  of Fests"</textarea> </a>
+   </div>
+   <h2 style="text-align: center;"><b><u>About IITR</b></u></h2>
+   <p>IITR is big NOT as big as it might be thought.But it's big enough to deter our from attending boring lectures at 8am.Nay, lectures in general.Along with other benefits,we are assured that campus is always more happening than the city out-side.Well, probably because there is nocity outside.But, no worries, big cities are merely filled with dance and fun-things that no college student would want anyway.The institute finds its roots way back in 1845.It was the time when speaking in a British accent did not make all of us effeminate and top hats were very much in fashion, so much so that people dressed up in 3-piece suits just to go have dinner in the Bhawan messes(where they were served in silverware by turbaned waiters).In 1847, the institute was officially established.It was renamed as the <u><b><i>Thomson College of Civil Engineering</i></b></u> in 1854 in honour of its founder,<a href="en.wikipedia.org/wiki/James_Thomason" target="_blank"><u><b><i>Sir James Thomson</a></i></b></u> , lieutenant governor of the Ganges canal.
+    <br>
+    <h2 style="text-align: center;"><b><u>ROORKEE'S Commandments</b></u></h2>
+    <p style="text-align: center;"><b>Thou shalt have no other docs before the identity card.<br>Thou shalt not rag.<br>Thou shalt not indulge in the consumption of alcohol or harmful drugs. <br> Thou shalt not be violent, nor indulge in any unkind, indecent bahavior towards <br>thy neighbours.<br>Thou shalt not take the law into they own hands and trust GOD(ADOSW) to take<br> care of all thy problems. <br> Thou shalt not become members of outside societies or join discussions of a <br> political nature without prior permission of thy Institute. <br> Thou shalt not deny mess, club and other facilities to other students. <br> Thou shalt not be a bad bol. <br> Thou shalt be a good bol. <br>Thou shalt say Peace Out when you have nothing else to say. <br> Peace out. </b> </p>
+    <a id="NEWS">
+    <div class="container" name="NEWS"> 
+      <h2 ><b><u>NEWS FEED</u></b></h2>
+      <img src="iitr.jpeg" width="300" height="200"> 
+      <h4>IIT Roorkee To Organise 5-Day Virtual Entrepreneurship Summit</h4>
+      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Read more</button>
+      <div id="demo" class="collapse">
+        Indian Institute of Technology (IIT) Roorkee will organise a five-day annual virtual entrepreneurship summit (E-Summit) from January 10 to host discussions with famous entrepreneurs.
+         The E-summit will have various events including Ideastorm - the B-Plan competition, Productathon- a software hackathon and Sale-Able- a sales competition.This year due to the on-going COVID-19 pandemic, the E-summit is being held virtually .More than 10,000 students, 100 startups,50 speakers and 20 venture capitalists from across regions in Asia are expected to participate in the summit. For further details, people can visit the IIT Roorkee E summit official website esummit.in
+      </div>
+      <br>
+      <br>
+      <br>
+      <img src="prize.jpeg" width="300" height="200"> 
+      <h4>IIT Roorkee Startup Recogsquare Wins ‘Most Innovative Digital Onboarding Rollout’ Award</h4>
+      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">Read more</button>
+      <div id="demo1" class="collapse">
+        A start-up incubated and funded by the Indian Institute of Technology (IIT) Roorkee- Recogsquare has won the ‘Most Innovative Digital Rollout Award’ at the Global Fintech Innovation Awards, by IBS Intelligence for the start-up association with Equitas Small Finance Bank.
+    On the occasion, Professor Ajit K Chaturvedi, Director, IIT Roorkee, said, "I am extremely pleased that Recogsquare, an IIT Roorkee startup, has been conferred the Most Innovative Digital Rollout Award. AI is one of the fastest-growing frontiers in technology and good to see our startup being right on that frontier.”
+    TIDES facilitate the incubation of new enterprises with innovative technologies by admitting them at its Incubation Centre and provide physical, technical, financial and networking supports and services.
+      </div>
+    </div> </a>
+    <a id="campus">
+   <div name="campus">
+   <h1 style="text-align: center;"><b><u>CAMPUS LIFE</u></b></h1>  
+  <p >All freshmen reside in Rajendra bhawan and fresh-girls in
+    Sarojini Bhawan. RJB residents with a JEE Rank under 2000 are allotted single rooms which means they get to spend the first year without all the snags that come with having a troublesome roommate.
+    Bhawans come with most of the basic amenities one may need
+    in day-to-day life.
+    <br>  <br>
+    
+    
+    •	A bathroom that you share with the 50 people that live in the same row as you, along with a dog or two if you’re lucky.<br>
+    •	A mess that serves… food…  <br>
+    •	A laundry guy that knocks on your door twice a week and can be counted on as a reliable alarm. There’s also a laundry room that requires you to provide your own detergent but is quite a popular alternative among people who find the laundry guy’s early morning timings to be inconvenient.  <br>
+    •	A number of open spaces in case you ever feel like
+    catching fresh air or are unfortunate enough to be the
+    victim of a GPL too grand to be contained within the
+    hostel corridors. <br>
+    •	A Gym for evening work-out sessions, whatever your reasons for that may be.  <br>
+    •	There’s also ungodly fast LAN connection in every room, perfect for multiplayer showdowns and movie nights arranged on a whim. <br>
+    •	A stationery shop - your life saviour for all the last-minute
+              graphs and practical _les that you’ll need.  <br>
+
+              <img src="rajendra.jpeg" alt="" class="center"> 
+ </p>
+</div>
+</a>
+<a id="fest">
+ <div class="container" name="fest"> 
+  <h1>FESTS</h1>
+  
+  <p>Click on the images to enlarge them. <br> Click on the names to gather more information.</p>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="thomso.jpeg" target="_blank">
+          <img src="thomso.jpeg"  style="widows: 300px; width: 300px;  height: 200px;">
+          <div class="caption">
+            <p><a href="https://en.wikipedia.org/wiki/Thomso_(festival)" target="_blank">THOMSO</a></p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="cognizance.jpeg" target="_blank">
+          <img src="cognizance.jpeg"  style="widows: 300px;width: 300px;  height: 200px;">
+          <div class="caption">
+            <p><a href="https://en.wikipedia.org/wiki/Cognizance" target="_blank">COGNIZANCE</a></p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="sangram.jpeg" target="_blank">
+          <img src="sangram.jpeg" style="widows: 300px; width: 300px; height: 200px;">
+          <div class="caption">
+            <p><a href="https://en.wikipedia.org/wiki/IIT_Roorkee" target="_blank">SANGRAM</a></p>
+          </div>
+        </a>
+      </div>
+    </div>
+  
+
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="inter iit.jpeg" target="_blank">
+          <img src="inter iit.jpeg"  style="widows: 300px; width: 300px; height: 200px;">
+          <div class="caption">
+            <p><a href="https://en.wikipedia.org/wiki/Inter_IIT_Sports_Meet" target="_blank">INTER IIT SPORTS MEET</a></p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="shristi.jpeg" target="_blank">
+          <img src="shristi.jpeg"  style="widows: 300px; width: 300px; height: 200px;">
+          <div class="caption">
+            <p><a href="http://watchout.iitr.ac.in/2019/03/srishti19" target="_blank">SHRISHTI</a></p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="summit.jpeg" target="_blank">
+          <img src="summit.jpeg"  style="widows: 300px; width: 300px; height: 200px;">
+          <div class="caption">
+            <p><a href="https://www.facebook.com/iitrsocialsummit/" target="_blank">NSS SOCIAL SUMMIT</a></p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </a>
+
+
+<div class="container">
+  <h1>IMAGE GALLERY</h1>
+  <h3>R-Land Clubs</h3>
+  <p>Click on the images to enlarge them.</p>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="dramatics.jpeg" target="_blank">
+          <img src="dramatics.jpeg"  style="widows: 300px; width: 300px;  height: 200px;">
+          <div class="caption">
+            <p>DRAMATICS SECTION</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="cinematics.jpeg" target="_blank">
+          <img src="cinematics.jpeg"  style="widows: 300px;width: 300px;  height: 200px;">
+          <div class="caption">
+            <p>CINEMATICS SECTION (SHAPE OF YOU)</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="dance.jpeg" target="_blank">
+          <img src="dance.jpeg" style="widows: 300px; width: 300px; height: 200px;">
+          <div class="caption">
+            <p>CHOREOGRAPHY SECTION</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  
+
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="arts.jpeg" target="_blank">
+          <img src="arts.jpeg"  style="widows: 300px; width: 300px; height: 200px;">
+          <div class="caption">
+            <p>    FINEARTS </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="robo.jpeg" target="_blank">
+          <img src="robo.jpeg"  style="widows: 300px; width: 300px;  height: 200px;">
+          <div class="caption">
+            <p>TEAM ROBOCON</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="motor.jpeg" target="_blank">
+          <img src="motor.jpeg"  style="widows: 300px;  width: 300px; height: 200px;">
+          <div class="caption">
+            <p>MOTORSPORTS</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="music.jpeg" target="_blank">
+            <img src="music.jpeg"  style="widows: 300px; width: 300px; height: 200px;">
+            <div class="caption">
+              <p>MUSIC SECTION</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="culinery.jpeg" target="_blank">
+            <img src="culinery.jpeg"  style="widows: 300px;  width: 300px; height: 200px;">
+            <div class="caption">
+              <p>CULINARY CLUB</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="photo.jpeg" target="_blank">
+            <img src="photo.jpeg"  style="widows: 350px; width: 300px; height: 200px;">
+            <div class="caption">
+              <p>PHOTOGRAPHY SECTION</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    
+   </section>
+
+<footer>
+      <h4 style="text-align: left;"> for more details on Indian Institute of Technology, Roorkee
+        <br> <a href="https://www.iitr.ac.in" target="_blank">CLICK HERE</a>
+        <br> <br> <br> 
+        <a  style="padding: 20px;"> Privacy Policies  </a>  
+         <a  style="padding: 20px;">Terms & Conditions  </a>
+          <a style="padding: 20px;"> &#169 Copyright, All Rights Reserved</a>
+          
+          <a href="https://www.facebook.com/iitroorkee.ICC" class="fa fa-facebook" target="_blank"></a>
+          <a href="https://www.instagram.com/iitroorkee" class="fa fa-instagram" target="_blank"></a>
+          <a href="https://www.youtube.com/channel/UCWzelmid9BHgokVfVGhWvLw"  target="_blank" class="fa fa-youtube"></a>
+          <a href="https://twitter.com/iitroorkee" class="fa fa-twitter" target="_blank"></a>
+          <a href="https://www.linkedin.com/school/157269/admin/" target="_blank" class="fa fa-linkedin"></a>
+
+       <h4 style="text-align: right;"> Developed & Maintained by <a href="hack o' holics.html"> Hack o'holic </a> team 
+  </footer>
+
+</body>
+</html>
