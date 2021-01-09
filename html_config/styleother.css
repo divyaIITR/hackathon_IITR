@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(196, 214, 247);
+}
+.header{
+    font-size: 80px;
+    color: brown;
+    text-align: center;
+    font-family: fantasy;
+}
+
+
+.info{
+    font-size: 30px;
+}
+.container .description-container{
+    font-size: 20px;
+}
